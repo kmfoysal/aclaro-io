@@ -1,0 +1,172 @@
+/**
+ * @Global scss for aclaro.io
+ * @project     - Aclaro
+ * @author      - GetWeb
+ * @created_by  - K.M Foysal
+ * @created_at  - 
+ * @modified_by -
+ */
+
+/* fonts import */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+/* fonts import -END */
+
+/* reset, root */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #f1f4f8;
+  font-family: "Inter", sans-serif !important;
+  overflow-x: hidden !important;
+}
+
+:root {
+  --white: #fff;
+  --dark-blue: #32395f;
+  --dark-ash: #737791;
+}
+
+/* reset, root - END */
+
+// container resize
+.container {
+  margin: 0 auto;
+  max-width: 1920px !important;
+  width: 100%;
+  padding: 0 40px;
+
+  @media (max-width: 768px) {
+    padding: 0 15px;
+  }
+}
+
+p,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-family: "Inter", sans-serif !important;
+}
+
+// Utility Class
+
+// Colour
+.clr-white {
+  color: var(--white);
+}
+
+.clr-dark-blue {
+  color: var(--white);
+}
+
+.clr-dark-ash {
+  color: var(--dark-ash);
+}
+
+// ------------------------------------------
+
+// Font Size
+
+.fs-16 {
+  font-size: 16px;
+}
+
+.fs-22 {
+  font-size: 22px;
+}
+
+.fs-32 {
+  font-size: 32px;
+}
+
+.fs-40 {
+  font-size: 40px;
+}
+
+//   ---------------------------------------
+
+// Font Weight
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.align-center {
+  text-align: center;
+}
+
+// Margin 
+
+.mb-0{
+  margin-bottom: 0 !important;
+}
+
+.my-36{
+  margin: 36px 0 !important;
+}
+
+
+// Common CSS 
+
+.auth-layout-left {
+  background: linear-gradient(180deg, #1e6dc9 0%, #74aac0 100%);
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+
+.auth-form{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+
+  .auth-form-wrapper {
+    max-width: 610px;
+    width: 100%;
+    padding: 32px;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0px 4px 35px 0px rgba(55, 69, 87, 0.1);
+  
+    .header-content{
+  
+      margin-bottom: 48px;
+      text-align: center;
+  
+      h1{
+          font-size: 40px;
+          color: var(--dark-blue);
+          font-weight: 600;
+          margin-bottom: 12px;
+      }
+  
+      p{
+          font-size: 16px;
+          color: var(--dark-ash);
+          line-height: 24px;
+      }
+    }
+  }
+  
+}
